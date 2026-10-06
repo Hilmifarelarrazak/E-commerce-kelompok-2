@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#fdf2f4" />
+    </linearGradient>
+
+    <!-- Maroon Gradient for Cap & Book -->
+    <linearGradient id="maroonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8f1538" />
+      <stop offset="100%" stop-color="#5c0d24" />
+    </linearGradient>
+
+    <!-- Gold Gradient for Tassel & Accents -->
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+
+    <!-- Soft Drop Shadow -->
+    <filter id="softShadow" x="-10%" y="-10%" width="125%" height="125%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#000000" flood-opacity="0.12" />
+    </filter>
+  </defs>
+
+  <!-- Squircle App Icon Container -->
+  <rect x="6" y="6" width="108" height="108" rx="26" fill="url(#bgGrad)" stroke="#e5e7eb" stroke-width="1.5" filter="url(#softShadow)" />
+
+  <!-- Inner Subtle Border Accent -->
+  <rect x="10" y="10" width="100" height="100" rx="22" fill="none" stroke="#fbcfe8" stroke-width="0.8" opacity="0.6" />
+
+  <!-- Graduation Cap (Toga) -->
+  <!-- Under-cap / Head band -->
+  <path d="M 38 52 C 38 66, 82 66, 82 52" fill="url(#maroonGrad)" opacity="0.9" />
+  
+  <!-- Mortarboard Diamond Top -->
+  <polygon points="60,26 98,44 60,62 22,44" fill="url(#maroonGrad)" />
+  
+  <!-- Highlight on Top Diamond Edge -->
+  <polyline points="24,44 60,27 96,44" fill="none" stroke="#ffffff" stroke-width="1.2" opacity="0.4" />
+
+  <!-- Tassel Button / Pin -->
+  <ellipse cx="60" cy="44" rx="3.5" ry="2.5" fill="url(#goldGrad)" />
+
+  <!-- Tassel String and Fringe -->
+  <path d="M 60 44 Q 78 48 88 56" fill="none" stroke="url(#goldGrad)" stroke-width="2.5" stroke-linecap="round" />
+  <polygon points="85,55 91,55 93,68 83,68" fill="url(#goldGrad)" />
+  <circle cx="88" cy="56" r="2" fill="#d97706" />
+
+  <!-- Open Book (Campus Learning & Marketplace) -->
+  <!-- Left Page -->
+  <path d="M 60 76 Q 42 70 26 74 L 26 87 Q 42 83 60 89 Z" fill="url(#maroonGrad)" />
+  <!-- Right Page -->
+  <path d="M 60 76 Q 78 70 94 74 L 94 87 Q 78 83 60 89 Z" fill="url(#maroonGrad)" />
+  <!-- Book Spine Center Line -->
+  <line x1="60" y1="76" x2="60" y2="89" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" opacity="0.8" />
+  
+  <!-- Little Bookmark Ribbon -->
+  <polygon points="57,88 63,88 63,95 60,93 57,95" fill="url(#goldGrad)" />
+</svg>
